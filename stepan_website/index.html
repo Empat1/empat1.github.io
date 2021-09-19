@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./adaptive.css">
+  <title>Document</title>
+</head>
+<a id="top"></a>
+<body>
+  <header>
+    <div class="container menu">
+      <!-- <input type="checkbox" name="menu" id="menu"> -->
+
+      <div id="menu" class="flex container hidden_menu">
+        <div class="flex menu_top">
+          <span></span>
+          <img onclick="hideMenu()" class="pointer" src="./images/cross.png" alt="">
+        </div>
+        <div class="flex menu_items">
+          <a onclick="hideMenu()" class="menu_item" href="#about">Обо мне</a>
+          <a onclick="hideMenu()" href="#skills" class="menu_item">Проф навыки</a>
+          <a onclick="hideMenu()" href="#contacts" class="menu_item">Контакты</a>
+        </div>
+        <div class="menu_bot">Спроектировал и разработал Евгений Черемисин</div>
+      </div>
+
+      <img class="logo" draggable="false" src="./images/logo.png" alt="">
+
+      <nav>
+        <a href="#about">
+          Обо мне
+          <div class="text_decor"></div>
+        </a>
+        <a href="#skills">
+          Проф навыки
+          <div class="text_decor"></div>
+        </a>
+        <a href="#contacts">
+          Контакты
+          <div class="text_decor"></div>
+        </a>
+      </nav>
+
+      <!-- <label class="menu_icon" for="menu"> -->
+      <img onclick="showMenu()" class="menu_icon" src="./images/menu_icon.svg" alt="">
+      <!-- </label> -->
+    </div>
+
+    <div class="header_bg">
+      <div class="container">
+        <h3>Добро пожаловать<br>на мой сайт!</h3>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container heading">
+      <div class="h2_wrapper">
+        <a id="about"></a>
+        <h2>Обо мне</h3>
+        <div class="text_decor"></div>
+      </div>
+
+      <div class="square"></div>
+    </div>
+
+    <div class="container content">
+      <div class="text">
+        <p>Меня зовут <span class="highlight">Черемисин Евгений Васильевич</span>. Я студент <span class="highlight">ЛГТУ</span> на третьем курсе и очень хотел бы получить автоматы по всем предметам, чтобы заняться <span class="highlight">android</span> разработкой.</p>
+        <div class="list">
+          <span class="highlight">👶 Мой опыт 0 лет</span>
+          <span class="highlight">📚 Образование есть</span>
+          <span class="highlight">🏠 Город Липецк</span>
+          <span class="highlight">🧳 Готов к переезду, но не из своего дома</span>
+          <span class="highlight">☕ Люблю вкусный чай</span>
+          <span class="highlight">😊 И дружный колектив</span>
+          <span class="highlight">🍪 И обожаю печеньки</span>
+        </div>
+      </div>
+
+      <div class="img_wrapper">
+        <img draggable="false" src="./images/stepan.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container heading">
+      <div class="h2_wrapper">
+        <a id="skills"></a>
+        <h2>Проф навыки</h3>
+        <div class="text_decor"></div>
+      </div>
+
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
+    <div class="container quote">
+      <div class="quote_block">
+        <p>Java и Kotlin в кармане, Android SDK под нами</p>
+        <div class="line"></div>
+        <span>©Черемисин Евгений</span>
+      </div>
+    </div>
+
+    <div class="container skills">
+      <div class="skill">
+        <img draggable="false" src="./images/java_icon.png" alt="">
+        <p>Свободное владение java</p>
+      </div>
+      <div class="skill">
+        <img draggable="false" src="./images/kotlin_icon.png" alt="">
+        <p>Kotlin</p>
+      </div>
+      <div class="skill">
+        <img draggable="false" src="./images/android_icon.png" alt="">
+        <p>Android SDK</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container heading">
+      <div class="h2_wrapper">
+        <a id="contacts"></a>
+        <h2>Контакты</h3>
+        <div class="text_decor"></div>
+      </div>
+
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
+    <div class="container text">
+      <p>Всегда рад поработь над любимы интересными проектами, за исключением <span class = "highlight"> веб разработки</span>!</p>
+    </div>
+
+    <div class="container contacts">
+      <a href="https://github.com/Empat1" class="contact" target="_blank">
+        <img draggable="false" src="./images/github_icon.png" alt="">
+        <p>Empat1</p>
+      </a>
+      <a href="https://vk.com/atiila" class="contact" target="_blank">
+        <img draggable="false" src="./images/vk_icon.png" alt="">
+        <p>atiila</p>
+      </a>
+      <a href="https://discordapp.com/users/userId" class="contact" target="_blank">
+        <img draggable="false" src="./images/discord_icon.png" alt="">
+        <p>Stepan</p>
+      </a>
+      <a href="https://windoworld.ru/wallpapers/futurama/1/1600-1200-59358.jpg" class="contact" target="_blank">
+        <img draggable="false" src="./images/telegram_icon.png" alt="">
+        <p>Ссылка забанена</p>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">Спроектировал и разработал Евгений Черемисин</div>
+    <a class="button" href="#top"><div>▶</div>Наверх</a>
+  </footer>
+
+  <script>
+    const menu = document.getElementById('menu');
+
+    showMenu = () => {
+      menu.style.display = 'flex'
+    }
+    hideMenu = () => {
+      menu.style.display = 'none'
+    }
+  </script>
+</body>
+</html>
