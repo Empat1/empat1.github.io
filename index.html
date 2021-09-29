@@ -14,38 +14,26 @@
     <div class="container menu">
       <!-- <input type="checkbox" name="menu" id="menu"> -->
 
-      <div id="menu" class="flex container hidden_menu">
-        <div class="flex menu_top">
-          <span></span>
-          <img onclick="hideMenu()" class="pointer" src="./images/cross.png" alt="">
-        </div>
-        <div class="flex menu_items">
-          <a onclick="hideMenu()" class="menu_item" href="#about">Обо мне</a>
-          <a onclick="hideMenu()" href="#skills" class="menu_item">Проф навыки</a>
-          <a onclick="hideMenu()" href="#contacts" class="menu_item">Контакты</a>
-        </div>
-        <div class="menu_bot">Спроектировал и разработал Евгений Черемисин</div>
-      </div>
+ 
 
       <img class="logo" draggable="false" src="./images/logo.png" alt="">
 
       <nav>
-        <a href="#about">
+        <a>
           Обо мне
           <div class="text_decor"></div>
         </a>
-        <a href="#skills">
+        <a>
           Проф навыки
           <div class="text_decor"></div>
         </a>
-        <a href="#contacts">
+        <a>
           Контакты
           <div class="text_decor"></div>
         </a>
       </nav>
 
       <!-- <label class="menu_icon" for="menu"> -->
-      <img onclick="showMenu()" class="menu_icon" src="./images/menu_icon.svg" alt="">
       <!-- </label> -->
     </div>
 
@@ -162,18 +150,6 @@
 
   <footer>
     <div class="container">Спроектировал и разработал Евгений Черемисин</div>
-    <a class="button" href="#top"><div>▶</div>Наверх</a>
   </footer>
-
-  <script>
-    const menu = document.getElementById('menu');
-
-    showMenu = () => {
-      menu.style.display = 'flex'
-    }
-    hideMenu = () => {
-      menu.style.display = 'none'
-    }
-  </script>
 </body>
 </html>
